@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
     mode: "development",
@@ -23,5 +24,25 @@ module.exports = {
             template: path.resolve(__dirname, './src/pages/about.html'),
             filename: 'about.html',
         }),
+        new HtmlWebpackPlugin({
+            title: 'Інтереси',
+            template: path.resolve(__dirname, './src/pages/rozklad.html'),
+            filename: 'rozklad.html',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Інтереси',
+            template: path.resolve(__dirname, './src/pages/photo.html'),
+            filename: 'photo.html',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Інтереси',
+            template: path.resolve(__dirname, './src/pages/news.html'),
+            filename: 'news.html',
+        }),
+        new CopyPlugin({
+            patterns: [
+                {from: "./src/assets/images", to: "./"}
+            ]
+        })
     ],
 }
