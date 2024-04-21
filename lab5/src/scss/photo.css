@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(255, 214, 64, 0.4), rgba(255, 225, 115, 0.2), white);
+    margin: 0;
+}
+main {
+    padding: 20px;
+}
+.section-title {
+    text-align: center;
+}
+.photos>figure {
+    width: 500px;
+    padding: 5px;
+    margin: 15px;
+}
+figcaption {
+    text-align: center;
+}
+img {
+    width: 500px;
+    height: 350px;
+}
+img:hover {
+    width: 505px;
+    height: 355px;
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

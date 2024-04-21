@@ -1,0 +1,21 @@
+footer {
+    /*position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    padding: 40px 0;
+    border-top: 0;
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background-color: #ffe173;
+    min-height: 100px;
+    text-align: center;
+}
