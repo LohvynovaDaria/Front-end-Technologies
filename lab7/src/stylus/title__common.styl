@@ -1,0 +1,61 @@
+.title {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffb740;
+}
+
+/** Microsoft Edge */
+@supports (-ms-ime-align: auto) {
+    header > p#mystery-message {
+        display: none;
+    }
+}
+    
+/** Mozilla Firefox */
+@-moz-document url-prefix() {
+    header > p#mystery-message {
+        display: none;
+    }
+}
+    
+/** Safari */
+    @media not all and (min-resolution: 0.001dpcm) {
+    header > p#mystery-message {
+        display: none;
+    }
+}
+    
+/** Chrominum */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    header > p#mystery-message:not(*:root) {
+        display: none;
+    }
+}
+
+/* IE10+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    header > p#mystery-message { 
+        display: none; 
+    }
+}
+    
+/* IE6,7,9,10 */
+@media screen and (min-width: 640px), screen\9 {
+    header > p#mystery-message { 
+        text-align: center;
+        background-color: #ffb740;
+        margin: 0;
+        padding-bottom: 5px; 
+    }
+}
+    
+/* IE8 */
+@media \0screen {
+    header > p#mystery-message { 
+        text-align: center;
+        background-color: #ffb740;
+        margin: 0;
+        padding-bottom: 5px; 
+    }
+}

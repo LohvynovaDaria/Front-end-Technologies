@@ -1,0 +1,8 @@
+require("./stylus/rozklad.styl")
+require("./stylus/nav__common.styl")
+require("./stylus/title__common.styl")
+require("./stylus/photo.styl")
+require("./stylus/news.styl")
+require("./stylus/index.styl")
+require("./stylus/footer__common.styl")
+require("./stylus/index__common.styl")

@@ -1,0 +1,23 @@
+@media print {
+    * {
+        font-family: 'Times New Roman', Georgia, 'Palatino';
+    }
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+        background-color: none;
+    }
+    .title {
+        background-color: none;
+    }
+    .nav-container {
+        display: none;
+    }
+    a::after {
+        content: "("attr(href)")";
+    }
+    footer {
+        display: none;
+    }
+}
